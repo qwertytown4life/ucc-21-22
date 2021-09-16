@@ -13,8 +13,9 @@ def factors(number):
 
 isPerfect = []
 N = int(input())
-
-if sum(factors(N)) == N:
+if N == 1:
+    print("1 is not perfect.")
+elif sum(factors(N)) == N:
     print(f"{N} is perfect!")
 else:
     print(f"{N} is not perfect.")
